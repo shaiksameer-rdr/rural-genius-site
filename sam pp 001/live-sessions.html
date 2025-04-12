@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sessions & Webinars - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="live-sessions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="live-sessions-hero">
+        <div class="container">
+            <h1>Learn Live from Industry Experts</h1>
+            <p class="subtitle">Stay Updated, Skill-Up, and Interact Directly with Mentors</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+            
+            <button class="btn register-btn">Register Now</button>
+        </div>
+    </section>
+
+    <!-- Upcoming Sessions -->
+    <section class="upcoming-sessions">
+        <div class="container">
+            <h2>Upcoming Sessions</h2>
+            
+            <!-- Filters -->
+            <div class="session-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">AI & ML</button>
+                <button class="filter-btn">Career Guidance</button>
+                <button class="filter-btn">Web Development</button>
+                <button class="filter-btn">Interview Prep</button>
+            </div>
+
+            <!-- Sessions Grid -->
+            <div class="sessions-grid">
+                <!-- Session Card 1 -->
+                <div class="session-card">
+                    <div class="session-info">
+                        <span class="session-type">Webinar</span>
+                        <div class="session-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 2:00 PM IST</span>
+                        </div>
+                        <h3>Introduction to Artificial Intelligence</h3>
+                        <p>Learn the fundamentals of AI and its applications in today's world.</p>
+                        <div class="speaker-profile">
+                            <img src="https://via.placeholder.com/50" alt="Speaker" class="speaker-image">
+                            <div>
+                                <h4>Dr. Sarah Johnson</h4>
+                                <p>AI Research Lead, Microsoft</p>
+                            </div>
+                        </div>
+                        <button class="btn register-btn">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Session Card 2 -->
+                <div class="session-card">
+                    <div class="session-info">
+                        <span class="session-type">Workshop</span>
+                        <div class="session-meta">
+                            <span><i class="far fa-calendar"></i> June 18, 2024</span>
+                            <span><i class="far fa-clock"></i> 3:00 PM IST</span>
+                        </div>
+                        <h3>Building Your First Web Application</h3>
+                        <p>Hands-on workshop on creating responsive web applications using modern technologies.</p>
+                        <div class="speaker-profile">
+                            <img src="https://via.placeholder.com/50" alt="Speaker" class="speaker-image">
+                            <div>
+                                <h4>Alex Chen</h4>
+                                <p>Senior Developer, Google</p>
+                            </div>
+                        </div>
+                        <button class="btn register-btn">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Sessions -->
+    <section class="past-sessions">
+        <div class="container">
+            <h2>Past Sessions Library</h2>
+            <div class="video-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="session-info">
+                        <h3>Resume Building Masterclass</h3>
+                        <p>Learn how to create an impressive resume that stands out.</p>
+                        <div class="session-meta">
+                            <span><i class="far fa-user"></i> John Smith</span>
+                            <span><i class="far fa-star"></i> 4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="session-info">
+                        <h3>Interview Success Strategies</h3>
+                        <p>Master the art of technical and behavioral interviews.</p>
+                        <div class="session-meta">
+                            <span><i class="far fa-user"></i> Emily Brown</span>
+                            <span><i class="far fa-star"></i> 4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers-section">
+        <div class="container">
+            <h2>Meet Our Expert Speakers</h2>
+            <div class="speakers-grid">
+                <!-- Speaker Card 1 -->
+                <div class="speaker-card">
+                    <img src="https://via.placeholder.com/150" alt="Speaker" class="speaker-image">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p>AI Research Lead, Microsoft</p>
+                    <div class="speaker-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Speaker Card 2 -->
+                <div class="speaker-card">
+                    <img src="https://via.placeholder.com/150" alt="Speaker" class="speaker-image">
+                    <h3>Alex Chen</h3>
+                    <p>Senior Developer, Google</p>
+                    <div class="speaker-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <h2>Join Our Learning Community</h2>
+            <p>Continue learning and networking with peers and mentors</p>
+            <div class="community-links">
+                <a href="#" class="community-btn telegram-btn">
+                    <i class="fab fa-telegram"></i> Join Telegram
+                </a>
+                <a href="#" class="community-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Join WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I join a live session?</h3>
+                    <p>Simply click the "Register Now" button for your chosen session. You'll receive a confirmation email with the joining link.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Will I get a certificate?</h3>
+                    <p>Yes, certificates are provided for all completed sessions with at least 80% attendance.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are the sessions free?</h3>
+                    <p>Most sessions are free for registered users. Premium workshops may have a nominal fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I watch the recording later?</h3>
+                    <p>Yes, all session recordings are available in our Past Sessions Library for registered users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="live-sessions.js"></script>
+</body>
+</html>

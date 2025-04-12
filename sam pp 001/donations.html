@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations & Partner Support - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="donations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section (Same as main page) -->
+    <header class="header">
+        <div class="logo">Rural Genius</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#courses">Courses & Training</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#companies">For Companies</a></li>
+                <li><a href="donations.html" class="active">Donations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn login">Login</button>
+            <button class="btn signup">Signup</button>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero donations-hero">
+        <div class="hero-content">
+            <h1>Empower Rural India with Us</h1>
+            <p class="hero-subtitle">Your support brings jobs, skills, and hope to rural youth.</p>
+            <div class="hero-cta">
+                <button class="btn primary">Become a Partner</button>
+                <button class="btn secondary">Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Metrics Section -->
+    <section class="impact-metrics">
+        <div class="container">
+            <h2>Our Impact So Far</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="count" data-target="5000">0</div>
+                    <p>Rural Students Trained</p>
+                </div>
+                <div class="metric-card">
+                    <div class="count" data-target="2000">0</div>
+                    <p>Job Opportunities Posted</p>
+                </div>
+                <div class="metric-card">
+                    <div class="count" data-target="100">0</div>
+                    <p>Villages Impacted</p>
+                </div>
+                <div class="metric-card">
+                    <div class="count" data-target="1000000">0</div>
+                    <p>Amount Raised (₹)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Donors Section -->
+    <section class="partners-donors">
+        <div class="container">
+            <h2>Our Partners & Donors</h2>
+            <div class="partner-grid">
+                <!-- Partner logos will be dynamically added here -->
+            </div>
+            <div class="partner-testimonials">
+                <div class="testimonial-carousel">
+                    <!-- Partner testimonials will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Support Us Section -->
+    <section class="why-support">
+        <div class="container">
+            <h2>Why Support Us</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Rural-Urban Skills Gap</h3>
+                    <p>Bridge the growing digital divide between rural and urban India through targeted skill development.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Limited Opportunities</h3>
+                    <p>Help rural graduates access quality training and job opportunities in the AI and tech sector.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Real Impact</h3>
+                    <p>Your contribution directly enables rural youth to build sustainable careers in technology.</p>
+                </div>
+            </div>
+            <div class="impact-stories">
+                <h3>Impact Stories</h3>
+                <div class="stories-grid">
+                    <!-- Impact stories will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-options">
+        <div class="container">
+            <h2>Make a Difference</h2>
+            <div class="donation-form">
+                <div class="donation-type">
+                    <button class="btn active" data-type="one-time">One-time</button>
+                    <button class="btn" data-type="monthly">Monthly</button>
+                </div>
+                <div class="amount-options">
+                    <button class="btn amount" data-amount="500">₹500</button>
+                    <button class="btn amount" data-amount="1000">₹1,000</button>
+                    <button class="btn amount" data-amount="2500">₹2,500</button>
+                    <div class="custom-amount">
+                        <input type="number" placeholder="Custom Amount" min="100">
+                    </div>
+                </div>
+                <div class="donation-details">
+                    <label>
+                        <input type="checkbox" id="anonymous"> Donate anonymously
+                    </label>
+                    <div class="payment-options">
+                        <button class="btn payment" data-method="card">Card</button>
+                        <button class="btn payment" data-method="upi">UPI</button>
+                        <button class="btn payment" data-method="netbanking">Net Banking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Registration Section -->
+    <section class="partner-registration">
+        <div class="container">
+            <h2>Partner With Us</h2>
+            <form id="partnerForm" class="partner-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Organization Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Contact Person Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Partnership Type</option>
+                        <option value="hiring">Hiring Partner</option>
+                        <option value="training">Training Partner</option>
+                        <option value="funding">Funding Partner</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us about your organization and how you'd like to partner" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Fund Allocation Section -->
+    <section class="fund-allocation">
+        <div class="container">
+            <h2>How Your Support Helps</h2>
+            <div class="allocation-chart">
+                <!-- Chart will be dynamically added here -->
+            </div>
+            <div class="allocation-gallery">
+                <!-- Images will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Join Us in Transforming Rural India</h2>
+            <p>"Education is the most powerful weapon which you can use to change the world" - Nelson Mandela</p>
+            <div class="cta-buttons">
+                <button class="btn primary">Become a Partner</button>
+                <button class="btn secondary">Sponsor a Batch</button>
+                <button class="btn tertiary">Volunteer</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-functions.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="donations.js"></script>
+</body>
+</html>

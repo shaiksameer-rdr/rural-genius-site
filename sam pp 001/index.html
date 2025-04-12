@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Genius - Empowering Rural Graduates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Firebase SDK -->
+    <script type="module" src="firebase-init.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Rural Genius</div>
+        <nav class="nav-menu">
+            <ul>
+                <li class="menu-item"><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#"><i class="fas fa-graduation-cap"></i>Learning <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="courses.html">Courses & Training</a></li>
+                        <li><a href="live-sessions.html">Live Sessions</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="jobs.html"><i class="fas fa-briefcase"></i>Jobs</a></li>
+                <li class="menu-item"><a href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#"><i class="fas fa-users"></i>Community <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="companies.html">For Companies</a></li>
+                        <li><a href="#donations">Donations</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#"><i class="fas fa-info-circle"></i>About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admin.html">Admin Panel</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn login">Login</button>
+            <button class="btn signup">Signup</button>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Rural Graduates with Future-Ready Skills</h1>
+            <p>AI Training, Career Opportunities, and Mentorship to Bridge the Urban-Rural Skill Gap</p>
+            <div class="cta-buttons">
+                <a href="courses.html" class="btn primary">Start Learning</a>
+                <button class="btn secondary">Post a Job</button>
+                <button class="btn tertiary">Partner with Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <p class="mission-text">We empower rural youth with cutting-edge AI skills and connect them to global opportunities, creating a bridge between rural talent and urban technology needs.</p>
+            <a href="about.html" class="btn">Know Our Story</a>
+            <div class="counters">
+                <div class="counter-item">
+                    <span class="count">1000+</span>
+                    <span class="label">Trained</span>
+                </div>
+                <div class="counter-item">
+                    <span class="count">500+</span>
+                    <span class="label">Jobs Connected</span>
+                </div>
+                <div class="counter-item">
+                    <span class="count">50+</span>
+                    <span class="label">Training Partners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2>Top Courses & Trainings</h2>
+            <div class="course-grid">
+                <!-- Course cards will be dynamically added here -->
+            </div>
+            <a href="courses.html" class="btn center">Browse All Trainings</a>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs" id="jobs">
+        <div class="container">
+            <h2>Job Opportunities</h2>
+            <div class="job-filters">
+                <select class="filter" id="skill-filter">
+                    <option value="">Select Skill</option>
+                </select>
+                <select class="filter" id="location-filter">
+                    <option value="">Select Location</option>
+                </select>
+                <select class="filter" id="type-filter">
+                    <option value="">Job Type</option>
+                    <option value="remote">Remote</option>
+                    <option value="onsite">On-site</option>
+                </select>
+            </div>
+            <div class="job-listings">
+                <!-- Job listings will be dynamically added here -->
+            </div>
+            <a href="jobs.html" class="btn center">Explore All Jobs</a>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <div class="container">
+            <h2>Student Success Stories</h2>
+            <div class="testimonials-carousel">
+                <!-- Testimonials will be dynamically added here -->
+            </div>
+            <button class="btn">Meet Our Achievers</button>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2>Our Partners</h2>
+            <div class="partner-logos">
+                <!-- Partner logos will be dynamically added here -->
+            </div>
+            <p class="partner-cta">Join our mission to uplift rural India</p>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation" id="donations">
+        <div class="container">
+            <h2>Support the Rural AI Revolution</h2>
+            <p>Your contribution can help bridge the digital divide and create opportunities for rural youth.</p>
+            <div class="donation-buttons">
+                <a href="donations.html" class="btn primary">Donate Now</a>
+                <a href="donations.html#partners" class="btn secondary">Become a CSR Partner</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot">
+        <button class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>AI Career Assistant</h3>
+                <button class="close-chat">&times;</button>
+                <!-- Language selector will be added here by JavaScript -->
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your question...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+                <div class="chat-suggestions">
+                    <button class="suggestion-btn" data-query="Find jobs">Find Jobs</button>
+                    <button class="suggestion-btn" data-query="Training programs">Training Programs</button>
+                    <button class="suggestion-btn" data-query="Resume help">Resume Help</button>
+                    <button class="suggestion-btn" data-query="Interview tips">Interview Tips</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="live-sessions.html">Live Sessions</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ruralgenius.org</p>
+                    <p>Phone: +91 XXXXXXXXXX</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rural Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="auth-init.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

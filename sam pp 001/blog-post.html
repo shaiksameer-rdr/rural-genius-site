@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="blog-post.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Rural Genius</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn profile-btn" style="display: none;">Profile</button>
+                <button class="btn login">Login</button>
+                <button class="btn signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="blog-post-container">
+        <article class="blog-post">
+            <div class="blog-post-header">
+                <div class="post-meta">
+                    <span class="category">AI Learning</span>
+                    <span class="date">June 15, 2023</span>
+                    <span class="read-time">5 min read</span>
+                </div>
+                <h1 class="post-title">From Village to Silicon Valley: A Rural Genius Success Story</h1>
+                <div class="author-info">
+                    <img src="path/to/author-image.jpg" alt="Author" class="author-image">
+                    <div class="author-details">
+                        <h3 class="author-name">Rajesh Patel</h3>
+                        <span class="author-role">Student Alumni</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-hero-image">
+                <img src="path/to/hero-image.jpg" alt="Blog Post Hero Image">
+            </div>
+
+            <div class="post-content">
+                <!-- Sample content structure -->
+                <p class="lead">When I first heard about artificial intelligence, it seemed like a distant dream - something that belonged in the tech hubs of big cities, not in my small village...</p>
+
+                <h2>The Beginning of My Journey</h2>
+                <p>Growing up in a farming family, technology was never part of our daily lives. But everything changed when I discovered Rural Genius...</p>
+
+                <blockquote>
+                    "The platform's structured learning approach and supportive community made the complex world of AI accessible to someone like me, who had limited exposure to technology."
+                </blockquote>
+
+                <h2>Overcoming Challenges</h2>
+                <p>The journey wasn't easy. Limited internet connectivity, language barriers, and balancing studies with farm work were constant challenges...</p>
+
+                <div class="image-with-caption">
+                    <img src="path/to/journey-image.jpg" alt="Learning Journey">
+                    <p class="caption">Studying late nights after farm work</p>
+                </div>
+
+                <h2>The Breakthrough Moment</h2>
+                <p>After six months of dedicated learning, I built my first AI model...</p>
+            </div>
+
+            <div class="post-tags">
+                <span class="tag">#ruraltalent</span>
+                <span class="tag">#AIlearning</span>
+                <span class="tag">#successstory</span>
+                <span class="tag">#inspiration</span>
+            </div>
+
+            <div class="post-actions">
+                <div class="like-section">
+                    <button class="like-btn" id="likeBtn">
+                        <svg class="heart-icon" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="like-count">42</span> Likes
+                    </button>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook">Share on Facebook</button>
+                    <button class="share-btn" data-platform="twitter">Share on Twitter</button>
+                    <button class="share-btn" data-platform="linkedin">Share on LinkedIn</button>
+                </div>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comments (5)</h3>
+                <div class="comment-form">
+                    <textarea placeholder="Share your thoughts..." id="commentInput"></textarea>
+                    <button class="btn submit-comment" id="submitComment">Post Comment</button>
+                </div>
+                <div class="comments-list" id="commentsList">
+                    <!-- Comments will be dynamically loaded here -->
+                </div>
+            </div>
+        </article>
+
+        <aside class="related-posts">
+            <h3>Related Posts</h3>
+            <div class="related-posts-grid">
+                <!-- Related posts will be dynamically loaded here -->
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rural Genius</h3>
+                <p>Empowering rural talent through AI education</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Rural Genius. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog-post.js"></script>
+</body>
+</html>

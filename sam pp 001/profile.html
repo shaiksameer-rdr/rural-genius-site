@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Rural Genius</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="courses.html">Courses & Training</a></li>
+                <li><a href="live-sessions.html">Live Sessions</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="companies.html">For Companies</a></li>
+                <li><a href="index.html#donations">Donations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="profile.html" class="btn profile-btn active">My Profile</a>
+            <button class="btn login">Login</button>
+            <button class="btn signup">Signup</button>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="" alt="Profile Photo" id="profile-photo">
+                    <button class="edit-photo-btn"><i class="fas fa-camera"></i></button>
+                </div>
+                <div class="profile-name-info">
+                    <h1 id="user-name">Loading...</h1>
+                    <p id="user-location"><i class="fas fa-map-marker-alt"></i> <span>Location</span></p>
+                    <div class="profile-badges">
+                        <span class="badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+                        <span class="badge user-type" id="user-type-badge">Student</span>
+                    </div>
+                </div>
+                <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+        </div>
+
+        <!-- Profile Navigation -->
+        <div class="profile-nav">
+            <button class="nav-tab active" data-tab="basic-info">Basic Info</button>
+            <button class="nav-tab" data-tab="education-skills" id="edu-skills-tab">Education & Skills</button>
+            <button class="nav-tab" data-tab="job-preferences" id="job-pref-tab">Job Preferences</button>
+            <button class="nav-tab" data-tab="progress" id="progress-tab">Progress</button>
+            <button class="nav-tab" data-tab="applications" id="applications-tab">Applications</button>
+            <button class="nav-tab" data-tab="engagement">Engagement</button>
+            <button class="nav-tab" data-tab="company-dashboard" id="company-tab">Company Dashboard</button>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- Basic Info Section -->
+            <div class="profile-section active" id="basic-info">
+                <h2>Basic Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Email</label>
+                        <p id="user-email">email@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Phone</label>
+                        <p id="user-phone">+91 XXXXXXXXXX</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Languages</label>
+                        <div class="language-tags" id="user-languages">
+                            <span class="tag">English</span>
+                            <span class="tag">Hindi</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <label>Social Links</label>
+                        <div class="social-links">
+                            <a href="#" id="linkedin-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" id="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Skills Section (Student Only) -->
+            <div class="profile-section" id="education-skills">
+                <h2>Education & Skills</h2>
+                <div class="education-section">
+                    <h3>Education</h3>
+                    <div class="education-card">
+                        <h4 id="qualification">Bachelor of Technology</h4>
+                        <p id="institution">Institution Name</p>
+                        <p id="edu-year">2020 - 2024</p>
+                    </div>
+                </div>
+                <div class="certifications-section">
+                    <h3>Certifications</h3>
+                    <div class="certification-grid" id="certification-list">
+                        <!-- Certification cards will be added dynamically -->
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3>Skills</h3>
+                    <div class="skills-grid" id="skills-list">
+                        <!-- Skill tags will be added dynamically -->
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Resume/CV</h3>
+                    <div class="resume-upload">
+                        <input type="file" id="resume-upload" hidden>
+                        <button class="upload-btn"><i class="fas fa-upload"></i> Upload Resume</button>
+                        <button class="download-btn" id="download-resume"><i class="fas fa-download"></i> Download Resume</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Preferences Section (Student Only) -->
+            <div class="profile-section" id="job-preferences">
+                <h2>Job Preferences</h2>
+                <div class="preferences-grid">
+                    <div class="preference-item">
+                        <label>Preferred Role</label>
+                        <p id="preferred-role">AI Developer</p>
+                    </div>
+                    <div class="preference-item">
+                        <label>Work Mode</label>
+                        <p id="work-mode">Remote</p>
+                    </div>
+                    <div class="preference-item">
+                        <label>Preferred Location</label>
+                        <p id="preferred-location">Bangalore</p>
+                    </div>
+                    <div class="preference-item">
+                        <label>Relocation</label>
+                        <p id="relocation-status">Willing to relocate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Tracker Section (Student Only) -->
+            <div class="profile-section" id="progress">
+                <h2>Learning Progress</h2>
+                <div class="progress-cards">
+                    <div class="progress-card">
+                        <h3>AI Training Progress</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;">75%</div>
+                        </div>
+                        <p>Current Module: Advanced Machine Learning</p>
+                    </div>
+                    <div class="progress-card">
+                        <h3>Live Sessions</h3>
+                        <p>12 Sessions Attended</p>
+                        <ul class="session-list" id="session-history">
+                            <!-- Session history will be added dynamically -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="projects-section">
+                    <h3>Projects</h3>
+                    <div class="project-grid" id="project-list">
+                        <!-- Project cards will be added dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applications Section (Student Only) -->
+            <div class="profile-section" id="applications">
+                <h2>Job Applications</h2>
+                <div class="applications-list" id="job-applications">
+                    <!-- Application cards will be added dynamically -->
+                </div>
+            </div>
+
+            <!-- Engagement Section -->
+            <div class="profile-section" id="engagement">
+                <h2>Platform Engagement</h2>
+                <div class="engagement-grid">
+                    <div class="engagement-card">
+                        <h3>Training Feedback</h3>
+                        <div class="feedback-list" id="feedback-history">
+                            <!-- Feedback items will be added dynamically -->
+                        </div>
+                    </div>
+                    <div class="engagement-card">
+                        <h3>Community Points</h3>
+                        <div class="points-display">
+                            <span class="points" id="community-points">150</span>
+                            <p>Points Earned</p>
+                        </div>
+                        <div class="achievements" id="achievement-list">
+                            <!-- Achievement badges will be added dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Dashboard Section (Company Only) -->
+            <div class="profile-section" id="company-dashboard">
+                <h2>Company Dashboard</h2>
+                <div class="company-stats">
+                    <div class="stat-card">
+                        <h3>Active Jobs</h3>
+                        <span class="stat-number" id="active-jobs-count">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Applicants</h3>
+                        <span class="stat-number" id="total-applicants">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Successful Hires</h3>
+                        <span class="stat-number" id="successful-hires">0</span>
+                    </div>
+                </div>
+                <div class="job-management">
+                    <h3>Job Postings</h3>
+                    <button class="btn primary" id="post-job-btn">Post New Job</button>
+                    <div class="job-list" id="company-jobs">
+                        <!-- Job cards will be added dynamically -->
+                    </div>
+                </div>
+                <div class="candidate-management">
+                    <h3>Candidate Management</h3>
+                    <div class="filter-section">
+                        <select id="skill-filter" class="filter">
+                            <option value="">Filter by Skill</option>
+                        </select>
+                        <select id="location-filter" class="filter">
+                            <option value="">Filter by Location</option>
+                        </select>
+                        <button class="btn" id="export-candidates">Export Selected</button>
+                    </div>
+                    <div class="candidates-list" id="candidate-list">
+                        <!-- Candidate cards will be added dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ruralgenius.org</p>
+                    <p>Phone: +91 XXXXXXXXXX</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rural Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

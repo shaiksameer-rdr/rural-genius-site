@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Companies - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="companies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Rural Genius</a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="companies.html" class="active">For Companies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero companies-hero">
+        <div class="container">
+            <h1>Empower Rural Talent – Hire the Next Generation</h1>
+            <p>Connect with highly motivated, AI-trained rural graduates and transform your workforce while making a lasting social impact.</p>
+            <div class="hero-cta">
+                <a href="#post-job" class="btn primary">Post a Job</a>
+                <a href="#talent-pool" class="btn secondary">Browse Talent</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Section -->
+    <section class="why-hire" id="why-hire">
+        <div class="container">
+            <h2>Why Hire from Rural Genius</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Untapped Talent Pool</h3>
+                    <p>Access a diverse pool of motivated graduates from rural India, trained in cutting-edge technologies.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Industry-Ready Skills</h3>
+                    <p>Our graduates are trained in AI, machine learning, and modern development practices.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>CSR Alignment</h3>
+                    <p>Support rural development while building a skilled workforce for your organization.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Cost-Effective Hiring</h3>
+                    <p>Reduce recruitment costs while accessing pre-vetted, qualified candidates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Job Section -->
+    <section class="post-job" id="post-job">
+        <div class="container">
+            <h2>Post a Job</h2>
+            <form class="job-form" id="jobPostForm">
+                <div class="form-group">
+                    <label for="jobTitle">Job Title*</label>
+                    <input type="text" id="jobTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="jobDescription">Job Description*</label>
+                    <textarea id="jobDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="experienceLevel">Experience Level*</label>
+                        <select id="experienceLevel" required>
+                            <option value="entry">Entry Level</option>
+                            <option value="junior">Junior (1-3 years)</option>
+                            <option value="mid">Mid Level (3-5 years)</option>
+                            <option value="senior">Senior (5+ years)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location*</label>
+                        <select id="location" required>
+                            <option value="remote">Remote</option>
+                            <option value="hybrid">Hybrid</option>
+                            <option value="onsite">On-site</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Required Skills*</label>
+                    <input type="text" id="skills" placeholder="e.g., Python, Machine Learning, Data Analysis" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="salaryMin">Salary Range (₹)*</label>
+                        <input type="number" id="salaryMin" placeholder="Minimum" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="salaryMax" placeholder="Maximum" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn primary">Post Job</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Company Dashboard -->
+    <section class="company-dashboard" id="dashboard">
+        <div class="container">
+            <h2>Company Dashboard</h2>
+            <div class="dashboard-login">
+                <h3>Access Your Dashboard</h3>
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password*</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn primary">Login</button>
+                </form>
+                <p>New to Rural Genius? <a href="#" class="signup-link">Create an account</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent Pool Section -->
+    <section class="talent-pool" id="talent-pool">
+        <div class="container">
+            <h2>Browse Our Talent Pool</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Skills</label>
+                    <select id="skillFilter">
+                        <option value="all">All Skills</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="ml">Machine Learning</option>
+                        <option value="data">Data Science</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Region</label>
+                    <select id="regionFilter">
+                        <option value="all">All Regions</option>
+                        <option value="north">North India</option>
+                        <option value="south">South India</option>
+                        <option value="east">East India</option>
+                        <option value="west">West India</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Course</label>
+                    <select id="courseFilter">
+                        <option value="all">All Courses</option>
+                        <option value="ai">AI Fundamentals</option>
+                        <option value="ml">ML Basics</option>
+                        <option value="data">Data Science</option>
+                    </select>
+                </div>
+            </div>
+            <div class="candidates-grid" id="candidatesGrid">
+                <!-- Candidate cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership" id="partner">
+        <div class="container">
+            <h2>Partner With Us</h2>
+            <div class="partnership-options">
+                <div class="partnership-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Sponsor Training</h3>
+                    <p>Support skill development programs and create a pipeline of trained talent.</p>
+                    <a href="#" class="btn secondary">Learn More</a>
+                </div>
+                <div class="partnership-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Host Webinars</h3>
+                    <p>Share industry insights and connect with potential candidates.</p>
+                    <a href="#" class="btn secondary">Schedule Now</a>
+                </div>
+                <div class="partnership-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Mentorship</h3>
+                    <p>Guide students through internships and real-world projects.</p>
+                    <a href="#" class="btn secondary">Join Program</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="count">150+</h3>
+                    <p>Rural Graduates Hired</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="count">50+</h3>
+                    <p>Partner Companies</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="count">90%</h3>
+                    <p>Retention Rate</p>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p>"Rural Genius graduates have shown exceptional technical skills and dedication. They've become valuable assets to our AI team."</p>
+                    <div class="testimonial-author">
+                        <img src="path/to/image.jpg" alt="HR Director">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>HR Director, TechCorp India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What types of graduates are available?</h3>
+                    <p>Our talent pool includes graduates trained in AI, Machine Learning, Data Science, and Full-stack Development, with both entry-level and experienced candidates available.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you verify candidates?</h3>
+                    <p>All candidates undergo rigorous technical assessments, background checks, and soft skills evaluation before being added to our talent pool.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can we recruit in bulk?</h3>
+                    <p>Yes, we offer specialized bulk hiring programs with custom training modules aligned to your organization's needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's the hiring model?</h3>
+                    <p>We offer both per-hire and subscription-based models. Contact our team for detailed pricing and plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Name*</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email*</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message*</label>
+                            <textarea id="contactMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Other Ways to Connect</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>recruitment@ruralgenius.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 XXX XXX XXXX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-calendar"></i>
+                        <p>Schedule a Demo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <button class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>Recruitment Assistant</h3>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ask about hiring process...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#post-job">Post a Job</a></li>
+                        <li><a href="#talent-pool">Browse Talent</a></li>
+                        <li><a href="#partner">Partnership</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Hiring Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rural Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="companies.js"></script>
+</body>
+</html>

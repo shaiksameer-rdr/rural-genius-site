@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Genius Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <!-- Firebase SDK -->
+    <script type="module" src="firebase-init.js"></script>
+    <script type="module">
+        import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js';
+        
+        const auth = getAuth();
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                // No user is signed in, redirect to login page
+                window.location.href = 'admin-login.html';
+            }
+        });
+    </script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.svg" alt="Rural Genius Logo" class="logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-section="dashboard">
+                    <span class="material-icons">dashboard</span>
+                    <span>Dashboard</span>
+                </li>
+                <li data-section="users">
+                    <span class="material-icons">people</span>
+                    <span>User Management</span>
+                </li>
+                <li data-section="courses">
+                    <span class="material-icons">school</span>
+                    <span>Courses</span>
+                </li>
+                <li data-section="jobs">
+                    <span class="material-icons">work</span>
+                    <span>Jobs</span>
+                </li>
+                <li data-section="resources">
+                    <span class="material-icons">library_books</span>
+                    <span>Resources</span>
+                </li>
+                <li data-section="sessions">
+                    <span class="material-icons">video_camera_front</span>
+                    <span>Live Sessions</span>
+                </li>
+                <li data-section="donations">
+                    <span class="material-icons">volunteer_activism</span>
+                    <span>Donations</span>
+                </li>
+                <li data-section="companies">
+                    <span class="material-icons">business</span>
+                    <span>Companies</span>
+                </li>
+                <li data-section="chatbot">
+                    <span class="material-icons">chat</span>
+                    <span>Chatbot</span>
+                </li>
+                <li data-section="blog">
+                    <span class="material-icons">article</span>
+                    <span>Blog</span>
+                </li>
+                <li data-section="pages">
+                    <span class="material-icons">edit</span>
+                    <span>Page Editor</span>
+                </li>
+                <li data-section="settings">
+                    <span class="material-icons">settings</span>
+                    <span>Settings</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <span class="material-icons">search</span>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="user-menu">
+                    <span class="material-icons">notifications</span>
+                    <div class="admin-profile">
+                        <img src="admin-avatar.svg" alt="Admin">
+                        <span>Admin Name</span>
+                        <button class="admin-logout">
+                            <span class="material-icons">logout</span>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Content Container -->
+            <div class="content-container">
+                <!-- Dashboard Section -->
+                <section id="dashboard" class="active">
+                    <h1>Dashboard Overview</h1>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="material-icons">groups</span>
+                            <h3>Total Users</h3>
+                            <p class="count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="material-icons">school</span>
+                            <h3>Active Courses</h3>
+                            <p class="count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="material-icons">work</span>
+                            <h3>Jobs Posted</h3>
+                            <p class="count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="material-icons">pending_actions</span>
+                            <h3>Pending Approvals</h3>
+                            <p class="count">0</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-grid">
+                        <div class="activity-feed">
+                            <h2>Live Activity Feed</h2>
+                            <div class="feed-container"></div>
+                        </div>
+                        <div class="quick-stats">
+                            <h2>Quick Statistics</h2>
+                            <div class="stats-container"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Other sections will be dynamically loaded -->
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="admin-auth.js"></script>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Learning - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Rural Genius</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="courses.html">Courses & Training</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="#" class="active">Resources</a></li>
+                <li><a href="companies.html">For Companies</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn login">Login</button>
+            <button class="btn signup">Signup</button>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="hero resources-hero">
+        <div class="hero-content">
+            <h1>Learn, Grow, and Get Job-Ready</h1>
+            <p>Access high-quality learning resources designed to help rural graduates master in-demand skills like Artificial Intelligence, Web Development, Digital Literacy, and more.</p>
+            <h2 class="tagline">Turn Potential into Power Through Learning</h2>
+        </div>
+    </section>
+
+    <!-- Training Categories Grid -->
+    <section class="training-categories">
+        <div class="container">
+            <h2>Learning Paths</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Master the fundamentals of AI, ML algorithms, and data science.</p>
+                    <button class="btn view-resources">View Resources</button>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, JavaScript, and modern web frameworks.</p>
+                    <button class="btn view-resources">View Resources</button>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Soft Skills</h3>
+                    <p>Enhance communication, resume writing, and workplace skills.</p>
+                    <button class="btn view-resources">View Resources</button>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Interview Preparation</h3>
+                    <p>Practice with mock interviews and expert tips.</p>
+                    <button class="btn view-resources">View Resources</button>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Government Job Prep</h3>
+                    <p>Prepare for government exams and opportunities.</p>
+                    <button class="btn view-resources">View Resources</button>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Learn SEO, social media, and digital advertising.</p>
+                    <button class="btn view-resources">View Resources</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <h2>Featured Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card flagship">
+                    <div class="course-image">
+                        <img src="path/to/ai-course-image.svg" alt="AI Course">
+                        <span class="flagship-label">Flagship</span>
+                    </div>
+                    <div class="course-info">
+                        <h3>Introduction to AI</h3>
+                        <p class="duration"><i class="far fa-clock"></i> 8 weeks</p>
+                        <p class="level"><i class="fas fa-signal"></i> Beginner</p>
+                        <button class="btn start-now">Start Now</button>
+                    </div>
+                </div>
+                <!-- More course cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Library -->
+    <section class="video-library">
+        <div class="container">
+            <h2>Video Tutorials</h2>
+            <div class="video-filters">
+                <select class="filter" id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="ai">AI & ML</option>
+                    <option value="web">Web Development</option>
+                    <option value="soft-skills">Soft Skills</option>
+                </select>
+                <select class="filter" id="language-filter">
+                    <option value="">All Languages</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+                <select class="filter" id="duration-filter">
+                    <option value="">All Durations</option>
+                    <option value="short">< 15 mins</option>
+                    <option value="medium">15-30 mins</option>
+                    <option value="long">> 30 mins</option>
+                </select>
+            </div>
+            <div class="video-grid">
+                <!-- Video items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resources -->
+    <section class="downloadable-resources">
+        <div class="container">
+            <h2>Learning Materials</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-road"></i>
+                    <h3>Learning Roadmaps</h3>
+                    <p>Step-by-step guides for different career paths</p>
+                    <button class="btn download">Download PDF</button>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Handbooks</h3>
+                    <p>Comprehensive guides and reference materials</p>
+                    <button class="btn download">Download PDF</button>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-file-code"></i>
+                    <h3>Cheatsheets</h3>
+                    <p>Quick reference guides for programming</p>
+                    <button class="btn download">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Sessions -->
+    <section class="live-sessions">
+        <div class="container">
+            <h2>Weekly Live Sessions</h2>
+            <div class="sessions-grid">
+                <div class="session-card upcoming">
+                    <div class="session-info">
+                        <span class="date">Next Session: July 15, 2024</span>
+                        <h3>Intro to AI Concepts</h3>
+                        <p class="speaker">By John Doe, AI Engineer</p>
+                        <button class="btn register">Register Now</button>
+                    </div>
+                </div>
+                <!-- More session cards -->
+            </div>
+            <div class="past-sessions">
+                <h3>Past Sessions</h3>
+                <!-- Past session recordings -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Assessment -->
+    <section class="skill-assessment">
+        <div class="container">
+            <h2>Test Your Skills</h2>
+            <div class="assessment-grid">
+                <div class="assessment-card">
+                    <h3>AI Concepts Quiz</h3>
+                    <p>20 questions • 30 minutes</p>
+                    <button class="btn start-assessment">Start Test</button>
+                </div>
+                <div class="assessment-card">
+                    <h3>Web Development Challenge</h3>
+                    <p>Build a responsive webpage</p>
+                    <button class="btn start-assessment">Start Project</button>
+                </div>
+                <div class="assessment-card">
+                    <h3>Logical Reasoning</h3>
+                    <p>25 questions • 45 minutes</p>
+                    <button class="btn start-assessment">Start Test</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Programs -->
+    <section class="partner-programs">
+        <div class="container">
+            <h2>Partner Training Programs</h2>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <img src="path/to/microsoft-logo.svg" alt="Microsoft Logo">
+                    <h3>Microsoft AI Challenge</h3>
+                    <p>50 Days of AI Learning</p>
+                    <button class="btn apply">Apply Now</button>
+                </div>
+                <!-- More partner cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Path Tracker -->
+    <section class="success-tracker">
+        <div class="container">
+            <h2>Your Learning Journey</h2>
+            <div class="progress-tracker">
+                <div class="milestone active">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Skill Selection</span>
+                </div>
+                <div class="milestone">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Course Completion</span>
+                </div>
+                <div class="milestone">
+                    <i class="fas fa-award"></i>
+                    <span>Assessment Passed</span>
+                </div>
+                <div class="milestone">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Job Application</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="path/to/student-photo.svg" alt="Student Photo">
+                    <div class="testimonial-content">
+                        <p class="quote">"Rural Genius helped me transition from a basic computer user to an AI developer."</p>
+                        <p class="student-info">Rahul Kumar</p>
+                        <p class="job-info">AI Developer at Tech Corp</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonial cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Community -->
+    <section class="learning-community">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <div class="community-links">
+                <a href="#" class="community-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Join WhatsApp Group</span>
+                </a>
+                <a href="#" class="community-link telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Join Telegram Channel</span>
+                </a>
+                <a href="#" class="community-link forum">
+                    <i class="fas fa-users"></i>
+                    <span>Discussion Forum</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="question">How do I join a course?</h3>
+                    <p class="answer">Simply click on the "Start Now" button on any course and follow the registration process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Is training free?</h3>
+                    <p class="answer">We offer both free and premium courses. Many basic courses and resources are available at no cost.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Can I download resources?</h3>
+                    <p class="answer">Yes, most of our PDFs and learning materials are available for offline access.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Will I get a certificate?</h3>
+                    <p class="answer">Yes, certificates are provided upon successful completion of courses and assessments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot">
+        <button class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>AI Learning Assistant</h3>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ask about courses or resources...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ruralgenius.org</p>
+                    <p>Phone: +91 XXXXXXXXXX</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rural Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="resources.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Rural Genius</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="courses.html">Courses & Training</a></li>
+                <li><a href="#" class="active">Jobs</a></li>
+                <li><a href="index.html#resources">Resources</a></li>
+                <li><a href="index.html#companies">For Companies</a></li>
+                <li><a href="index.html#donations">Donations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn login">Login</button>
+            <button class="btn signup">Signup</button>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero jobs-hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Job</h1>
+            <p>Connecting Rural Talent to Global Opportunities</p>
+            <div class="cta-buttons">
+                <button class="btn primary">Browse Jobs</button>
+                <button class="btn secondary">Get Skill-Matched Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Search and Filters -->
+    <section class="job-search">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search jobs by title, skills, or company">
+                </div>
+                <button class="btn search-btn">Search</button>
+            </div>
+            <div class="filters">
+                <select class="filter" id="industry-filter">
+                    <option value="">Industry</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                </select>
+                <select class="filter" id="skills-filter">
+                    <option value="">Skills</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="web">Web Development</option>
+                    <option value="data">Data Analysis</option>
+                </select>
+                <select class="filter" id="company-filter">
+                    <option value="">Company</option>
+                </select>
+                <select class="filter" id="location-filter">
+                    <option value="">Location</option>
+                    <option value="remote">Remote</option>
+                    <option value="rural">Rural-Friendly</option>
+                </select>
+                <select class="filter" id="experience-filter">
+                    <option value="">Experience Level</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="0-2">0-2 Years</option>
+                    <option value="2-5">2-5 Years</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+        <div class="container">
+            <div class="section-header">
+                <h2>Available Opportunities</h2>
+                <div class="view-toggle">
+                    <button class="btn active" data-view="grid"><i class="fas fa-th-large"></i></button>
+                    <button class="btn" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="jobs-grid" id="jobs-container">
+                <!-- Job cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill-Based Job Matching -->
+    <section class="skill-matching" id="skill-matching">
+        <div class="container">
+            <h2>Recommended Jobs for You</h2>
+            <p class="section-desc">Based on your skills and completed courses</p>
+            <div class="recommended-jobs">
+                <!-- Recommended jobs will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Employers -->
+    <section class="featured-employers">
+        <div class="container">
+            <h2>Featured Employers</h2>
+            <p class="section-desc">Leading companies committed to rural hiring</p>
+            <div class="employer-grid">
+                <!-- Employer cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Process -->
+    <section class="apply-process">
+        <div class="container">
+            <h2>3 Easy Steps to Apply</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <h3>Complete Profile</h3>
+                    <p>Add your skills, education, and experience</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Match Skills</h3>
+                    <p>Get matched with relevant opportunities</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>One-Click Apply</h3>
+                    <p>Apply instantly with your profile</p>
+                </div>
+            </div>
+            <div class="resume-tools">
+                <h3>Build Your Professional Resume</h3>
+                <button class="btn primary">Create Resume</button>
+                <button class="btn secondary">Resume Tips</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="stories-carousel">
+                <!-- Success stories will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot">
+        <button class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>AI Career Assistant</h3>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ask about jobs or interview tips...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ruralgenius.org</p>
+                    <p>Phone: +91 XXXXXXXXXX</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rural Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="jobs.js"></script>
+</body>
+</html>

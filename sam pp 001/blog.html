@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Rural Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Rural Genius</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn profile-btn" style="display: none;">Profile</button>
+                <button class="btn login">Login</button>
+                <button class="btn signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <section class="blog-header">
+            <h1>Rural Genius Blog</h1>
+            <p>Stories, insights, and learning resources from our community</p>
+            <button class="btn write-blog" id="writeBlogBtn">Write a Blog</button>
+        </section>
+
+        <section class="blog-filters">
+            <div class="search-bar">
+                <input type="text" placeholder="Search blogs..." id="blogSearch">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="ai-learning">AI Learning</button>
+                <button class="filter-btn" data-category="career-guidance">Career Guidance</button>
+                <button class="filter-btn" data-category="skill-development">Skill Development</button>
+                <button class="filter-btn" data-category="student-stories">Student Stories</button>
+                <button class="filter-btn" data-category="company-insights">Company Insights</button>
+            </div>
+        </section>
+
+        <section class="featured-blog">
+            <div class="featured-blog-content">
+                <img src="path/to/featured-image.jpg" alt="Featured Blog">
+                <div class="featured-blog-text">
+                    <span class="featured-label">Featured</span>
+                    <h2>From Village to Silicon Valley: A Rural Genius Success Story</h2>
+                    <p>Discover how our platform helped transform the life of a rural student into a successful AI developer...</p>
+                    <div class="blog-meta">
+                        <span class="author">By Rajesh Patel</span>
+                        <span class="date">June 15, 2023</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                    <a href="blog-post.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-grid" id="blogGrid">
+            <!-- Blog posts will be dynamically populated here -->
+        </section>
+
+        <div class="popular-tags">
+            <h3>Popular Tags</h3>
+            <div class="tags-container">
+                <span class="tag">#ruraltalent</span>
+                <span class="tag">#AItraining</span>
+                <span class="tag">#interviewtips</span>
+                <span class="tag">#studentstories</span>
+                <span class="tag">#careeradvice</span>
+                <span class="tag">#techinnovation</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rural Genius</h3>
+                <p>Empowering rural talent through AI education</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Rural Genius. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
